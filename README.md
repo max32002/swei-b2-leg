@@ -32,6 +32,19 @@
 
 請點選GitHub此畫面右上綠色「Clone or download」按鈕，並選擇「Download ZIP」，或點進想下載的ttf字型檔案，再點「Download」的按鈕進行下載。
 
+## 使用 WebFont
+
+網路字型(Web Font)，用於網頁上的字型顯示，使用者的用戶端不需預先安裝字型檔，一樣能夠看到特殊的字型效果。實現該功能的原理是在瀏覽時才下載字型檔。
+
+可以服用下面的css:
+```
+@font-face {
+  font-family: SweiB2LegCJKtc-Regular;
+  src: url(https://cdn.jsdelivr.net/gh/max32002/swei-b2-leg@2.0/WebFont/CJK%20TC/SweiB2LegCJKtc-Regular.woff2) format("woff2")
+  , url(https://cdn.jsdelivr.net/gh/max32002/swei-b2-leg@2.0/WebFont/CJK%20TC/SweiB2LegCJKtc-Regular.woff) format("woff");
+}
+```
+
 ## 已知問題
 
 * 這不是一個專業的字型檔案。
@@ -39,7 +52,7 @@
 
 ## 附註
 
-* 演算黑科技將字體轉角的三角形轉成半圓形，請參考 /python/ 目錄下的腳本檔案。透過調整程式碼，也許也可以產生出新的有趣字型。目前的程式應該還有很多錯誤或需要再加強的地方。請先把要處理的字型，轉成 FontForge 的 sfdir, 再透過程式去處理產生出來的檔案。
+* 演算黑科技將字體轉角的三角形轉成半圓形，請參考獅尾B2黑體專案 /python/ 目錄下的腳本檔案。透過調整程式碼，也許也可以產生出新的有趣字型。目前的程式應該還有很多錯誤或需要再加強的地方。請先把要處理的字型，轉成 FontForge 的 sfdir, 再透過程式去處理產生出來的檔案。
 
 ## 著作權與授權
 
@@ -52,9 +65,17 @@
     
 ## 相關網頁
 
+* 獅尾腿圓 Swei Gothic Leg
+https://max-everyday.com/2020/08/swei-gothic-leg/
+* 獅尾彩虹腿 Swei Rainbow Leg
+https://max-everyday.com/2020/08/swei-rainbow-leg/
 * 獅尾B2腿黑體 Swei B2 Leg
 https://max-everyday.com/2020/07/swei-b2-leg/
-* 獅尾XD珍珠 Swei.XD.Pearl
+* 花園肉丸 Hana Meatball
+https://max-everyday.com/2020/08/hana-meatball/
+* B2花園 B2 Hana
+https://max-everyday.com/2020/08/b2-hana-font/
+* 獅尾XD珍珠 Swei XD Pearl
 https://max-everyday.com/2020/07/swei-xd-pearl/
 * 獅尾B2黑體 Swei B2 Sans
 https://max-everyday.com/2020/07/swei-b2-sans/
@@ -74,11 +95,11 @@ https://max-everyday.com/2020/04/swei-half-moon/
 https://max-everyday.com/2020/04/swei-gothic/
 * 獅尾黑體 Swei Sans
 https://max-everyday.com/2020/03/swei-sans/
-* 內海字體 (NaikaiFont) 
+* 內海字體 Naikai Font
 https://max-everyday.com/2020/03/naikaifont/
-* 莫大毛筆字體 (Bakudai)
+* 莫大毛筆字體 Bakudai Font
 https://max-everyday.com/2020/03/bakudaifont/
-* 正風毛筆字體 (MasaFont)
+* 正風毛筆字體 Masa Font
 https://max-everyday.com/2020/05/masafont/
 * 清松手寫體 (JasonHandWriting)
 https://jasonfonts.max-everyday.com/
